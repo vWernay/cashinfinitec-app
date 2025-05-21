@@ -13,7 +13,12 @@ const config: Config = {
                 green: "#008000",
                 yellow: "#FFD700",
                 blue: "#0550A2"
-            }
+            },
+            fontFamily: {
+                roboto: ['Roboto_400Regular', 'sans-serif'],
+                "roboto-medium": ['Roboto_500Medium', 'sans-serif'],
+                "roboto-semibold": ['Roboto_600SemiBold', 'sans-serif'],
+            },
         }
     },
     plugins: [],
