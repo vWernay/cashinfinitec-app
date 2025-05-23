@@ -29,7 +29,7 @@ export default function Offers() {
     return (
         <View className="flex-1 bg-zinc-800">
             <Image
-                source={require('../../assets/logo.png')}
+                source={require('../../../assets/logo.png')}
                 resizeMode='contain'
                 className='w-40 h-40'
             />

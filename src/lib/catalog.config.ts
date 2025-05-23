@@ -47,16 +47,16 @@ export const categoryProducts: Record<number, Product[]> = {
             title: 'Placa mãe',
             discount: 15,
             points: 10,
-            image: require('./../assets/images/motherboard.png'),
-            shopImage: require('./../assets/images/terabyte-logo.png'),
+            image: require('../../assets/images/motherboard.png'),
+            shopImage: require('../../assets/images/terabyte-logo.png'),
         },
         {
             id: 2,
             title: 'NVMe',
             discount: 10,
             points: 5,
-            image: require('./../assets/images/nvme.png'),
-            shopImage: require('./../assets/images/kabum-logo.png'),
+            image: require('../../assets/images/nvme.png'),
+            shopImage: require('../../assets/images/kabum-logo.png'),
         }
     ]
 }

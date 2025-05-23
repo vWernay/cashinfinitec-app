@@ -20,7 +20,7 @@ export default function Catalog() {
 
     return (
         <View className="flex-1 items-center px-6 py-12 bg-zinc-800 gap-3">
-            <Image source={require('./../../../assets/logo.png')} />
+            <Image source={require('../../../../assets/logo.png')} />
             <Text className='text-2xl font-medium text-white self-start'>CATEGORIAS DE CASHBACK</Text>
             <FlatList
                 ref={flatListRef}
