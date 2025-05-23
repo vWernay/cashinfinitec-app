@@ -1,17 +1,17 @@
-import { Tabs } from 'expo-router';
+import { Tabs, useRouter } from 'expo-router';
 import { useEffect } from 'react';
 import { useAuth } from '../../contexts/auth-context';
-import { router } from 'expo-router';
 import { tabs } from '../../lib/tabs.config';
 
 export default function AppLayout() {
     const { user, isLoading } = useAuth();
+    const router = useRouter();
 
     useEffect(() => {
         if (!isLoading && user === null) {
             router.replace('/auth');
         }
-    }, [user, isLoading]);
+    }, [user, isLoading, router.replace]);
 
     if (isLoading || user === null) return null;
 

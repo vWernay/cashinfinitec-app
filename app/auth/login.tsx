@@ -1,12 +1,13 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useRouter } from 'expo-router';
-import { LockKeyhole, UserRound } from 'lucide-react-native';
 import { useForm } from 'react-hook-form';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import Button from '../../components/button';
 import InputField from '../../components/input-field';
 import { type LoginSchema, loginSchema } from '../../schemas/login-schema';
 import { useAuth } from '../../contexts/auth-context';
+import LockKeyhole from 'lucide-react-native/dist/esm/icons/lock-keyhole';
+import UserRound from 'lucide-react-native/dist/esm/icons/user-round';
 
 export default function LoginScreen() {
     const router = useRouter();

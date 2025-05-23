@@ -18,8 +18,8 @@ export default function AuthScreen() {
                     >
                         Compre e receba parte do seu dinheiro de volta!
                     </Text>
-                    <Button title='ENTRAR' onPress={() => router.navigate('/login')} />
-                    <Button title='CRIAR CONTA' outlined onPress={() => router.navigate('/register')} />
+                    <Button title='ENTRAR' onPress={() => router.push('/auth/login')} />
+                    <Button title='CRIAR CONTA' outlined onPress={() => router.push('/auth/register')} />
                 </View>
             </View>
         </ImageBackground>

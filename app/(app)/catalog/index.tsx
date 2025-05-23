@@ -2,9 +2,11 @@ import { View, Image, Text, FlatList, TouchableOpacity } from 'react-native';
 import { categories } from '../../../lib/catalog.config';
 import { ArrowDownFromLine } from 'lucide-react-native';
 import { useRef, useState } from 'react';
-import { router } from 'expo-router';
+import { useRouter } from 'expo-router';
 
 export default function Catalog() {
+    const router = useRouter();
+
     const flatListRef = useRef<FlatList>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
 

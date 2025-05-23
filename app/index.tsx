@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import { View, Text, Image } from 'react-native';
-import { router } from 'expo-router';
 import { useAuth } from '../contexts/auth-context';
+import { useRouter } from 'expo-router';
 
 export default function SplashScreen() {
     const { user, isLoading } = useAuth();
+    const router = useRouter();
 
     useEffect(() => {
         if (isLoading) return;
@@ -14,7 +15,7 @@ export default function SplashScreen() {
         } else {
             router.replace('/home');
         }
-    }, [user, isLoading]);
+    }, [user, isLoading, router.replace]);
 
 
     return (
