@@ -8,6 +8,18 @@ import Search from 'lucide-react-native/dist/esm/icons/search'
 import ShoppingCart from 'lucide-react-native/dist/esm/icons/shopping-cart'
 
 export default function Home() {
+    const [search, setSearch] = useState('');
+    const deferredSearch = useDeferredValue(search);
+
+    const filteredProducts = useMemo(() => {
+        if (deferredSearch === '') {
+            return homeProducts;
+        }
+        return homeProducts.filter((product) =>
+            product.title.toLowerCase().includes(deferredSearch.toLowerCase())
+        );
+    }, [deferredSearch]);
+
     return (
         <View className="flex-1 bg-zinc-800">
             <Image
@@ -24,6 +36,8 @@ export default function Home() {
                     <TextInput
                         className='bg-white text-zinc-800 w-full rounded-full py-4 px-12'
                         placeholder='O que você procura hoje?'
+                        value={search}
+                        onChangeText={setSearch}
                     />
 
                     <View className='absolute right-0 mr-6'>
@@ -35,7 +49,7 @@ export default function Home() {
                 </TouchableOpacity>
             </View>
             <FlatList
-                data={homeProducts}
+                data={filteredProducts}
                 keyExtractor={(item) => item.id.toString()}
                 numColumns={2}
                 showsVerticalScrollIndicator={false}
