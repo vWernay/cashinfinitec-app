@@ -14,14 +14,14 @@ export default function Profile() {
     return (
         <View className="flex-1 bg-zinc-800">
             <Image
-                source={require('../../../assets/logo.png')}
+                source={require('../../../../assets/logo.png')}
                 resizeMode='contain'
                 className='w-40 h-40'
             />
             <View className="bg-green rounded-3xl flex-row justify-between p-8 mt-[-30]">
                 <IdCard size={48} color='#FFD700' />
                 <View className="gap-6 items-center">
-                    <Image source={require('../../../assets/images/avatar.png')} />
+                    <Image source={require('../../../../assets/images/avatar.png')} />
                     <View className="bg-zinc-100 rounded-full px-4 py-2 max-w-64">
                         <Text
                             className='text-black text-1xl text-center'

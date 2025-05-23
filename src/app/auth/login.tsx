@@ -32,7 +32,7 @@ export default function LoginScreen() {
 
     return (
         <View className="flex-1 items-center px-10 py-12 bg-zinc-800 gap-3">
-            <Image source={require('./../../assets/logo.png')} />
+            <Image source={require('../../../assets/logo.png')} />
             <View className='w-full'>
                 <Text
                     className='text-white text-3xl font-medium'

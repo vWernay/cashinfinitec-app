@@ -14,7 +14,7 @@ type Product = {
 export const homeProducts: Product[] = [
     {
         id: 1,
-        image: require('../assets/images/amd-cpu.png'),
+        image: require('../../assets/images/amd-cpu.png'),
         title: 'Processador AMD Ryzen Threadripper 7980X',
         price: 'R$ 33.071,26',
         oldPrice: 'R$ 36.746,26',
@@ -26,7 +26,7 @@ export const homeProducts: Product[] = [
     },
     {
         id: 2,
-        image: require('../assets/images/fan.png'),
+        image: require('../../assets/images/fan.png'),
         title: 'Ventoinha (Cooler) - 12cm Noctua NF-A12x15-PWM',
         price: 'R$ 195,14',
         oldPrice: 'R$ 221,75',
@@ -38,7 +38,7 @@ export const homeProducts: Product[] = [
     },
     {
         id: 3,
-        image: require('../assets/images/monitor.png'),
+        image: require('../../assets/images/monitor.png'),
         title: 'Monitor Gamer LG UltraGear OLED – Tela OLED 27',
         price: 'R$ 4.249,99',
         oldPrice: 'R$ 4.999,99',
@@ -50,7 +50,7 @@ export const homeProducts: Product[] = [
     },
     {
         id: 4,
-        image: require('../assets/images/ram.png'),
+        image: require('../../assets/images/ram.png'),
         title: 'Memória RAM Husky Impulse, 16GB',
         price: 'R$ 237,99',
         oldPrice: 'R$ 255,90',
