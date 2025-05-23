@@ -1,8 +1,8 @@
-import type { ColorValue } from "react-native"
+import type { ColorValue, ImageSourcePropType } from "react-native"
 
 type Offer = {
     id: number
-    image: any
+    image: ImageSourcePropType
     colors: [ColorValue, ColorValue, ...ColorValue[]]
     title?: string
     footer?: string

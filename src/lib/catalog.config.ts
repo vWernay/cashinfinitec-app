@@ -1,7 +1,9 @@
+import type { ImageSourcePropType } from "react-native"
+
 type Category = {
-    id: number;
-    name: string;
-};
+    id: number
+    name: string
+}
 
 export const categories: Category[] = [
     {
@@ -31,13 +33,13 @@ export const categories: Category[] = [
 ]
 
 type Product = {
-    id: number;
-    title: string;
-    discount: number;
-    points: number;
-    image: any;
-    shopImage: any;
-};
+    id: number
+    title: string
+    discount: number
+    points: number
+    image: ImageSourcePropType
+    shopImage: ImageSourcePropType
+}
 
 export const categoryProducts: Record<number, Product[]> = {
     1: [
