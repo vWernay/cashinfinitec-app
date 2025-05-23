@@ -1,8 +1,8 @@
 import { View, Image, Text, FlatList, TouchableOpacity } from 'react-native';
 import { categories } from '../../../lib/catalog.config';
-import { ArrowDownFromLine } from 'lucide-react-native';
 import { useRef, useState } from 'react';
 import { useRouter } from 'expo-router';
+import ArrowDownFromLine from 'lucide-react-native/dist/esm/icons/arrow-down-from-line';
 
 export default function Catalog() {
     const router = useRouter();

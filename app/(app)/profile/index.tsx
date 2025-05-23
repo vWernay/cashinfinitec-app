@@ -1,6 +1,8 @@
-import { IdCard, LogOut } from "lucide-react-native";
 import { View, Image, Text, TouchableOpacity } from "react-native";
 import { useAuth } from "../../../contexts/auth-context";
+
+import IdCard from 'lucide-react-native/dist/esm/icons/id-card';
+import LogOut from 'lucide-react-native/dist/esm/icons/log-out';
 
 export default function Profile() {
     const { user, logout } = useAuth();

@@ -1,7 +1,7 @@
 import { useLocalSearchParams } from 'expo-router';
 import { View, Image, Text, TouchableOpacity, FlatList } from 'react-native';
 import { categories, categoryProducts } from '../../../lib/catalog.config';
-import { ShoppingCart } from 'lucide-react-native';
+import ShoppingCart from 'lucide-react-native/dist/esm/icons/shopping-cart';
 
 export default function CategoryScreen() {
     const { category } = useLocalSearchParams();

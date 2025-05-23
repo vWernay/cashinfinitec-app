@@ -1,4 +1,8 @@
-import { BadgeDollarSign, ChartNoAxesColumnIncreasing, List, Rocket, Truck } from 'lucide-react-native'
+import BadgeDollarSign from 'lucide-react-native/dist/esm/icons/badge-dollar-sign';
+import ChartNoAxesColumnIncreasing from 'lucide-react-native/dist/esm/icons/chart-no-axes-column-increasing';
+import List from 'lucide-react-native/dist/esm/icons/list';
+import Rocket from 'lucide-react-native/dist/esm/icons/rocket';
+import Truck from 'lucide-react-native/dist/esm/icons/truck';
 
 const ICON_SIZE = 32;
 

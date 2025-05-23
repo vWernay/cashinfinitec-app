@@ -1,7 +1,8 @@
 import { View, TextInput, type TextInputProps, Text, TouchableOpacity } from 'react-native';
-import { Eye, EyeOff } from 'lucide-react-native';
 import { useState } from 'react';
 import clsx from 'clsx';
+import Eye from 'lucide-react-native/dist/esm/icons/eye';
+import EyeOff from 'lucide-react-native/dist/esm/icons/eye-off';
 
 type Props = TextInputProps & {
     icon?: React.ReactNode;

@@ -1,7 +1,11 @@
-import { AlignJustify, History, Search, ShoppingCart } from 'lucide-react-native';
-import { View, Image, TouchableOpacity, TextInput, Text, FlatList } from 'react-native';
-import React from 'react';
+import { useDeferredValue, useMemo, useState } from 'react';
+import { FlatList, Image, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { homeProducts } from '../../lib/home-products.config';
+
+import AlignJustify from 'lucide-react-native/dist/esm/icons/align-justify'
+import History from 'lucide-react-native/dist/esm/icons/history'
+import Search from 'lucide-react-native/dist/esm/icons/search'
+import ShoppingCart from 'lucide-react-native/dist/esm/icons/shopping-cart'
 
 export default function Home() {
     return (

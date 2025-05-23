@@ -1,10 +1,12 @@
-import { Copy, CopyCheck } from 'lucide-react-native';
 import React, { useState } from 'react';
 import { View, Image, Text, TouchableOpacity, FlatList } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import * as Clipboard from 'expo-clipboard';
 import { offers } from '../../lib/offers.config';
 import Toast from 'react-native-toast-message';
+
+import Copy from 'lucide-react-native/dist/esm/icons/copy'
+import CopyCheck from 'lucide-react-native/dist/esm/icons/copy-check'
 
 export default function Offers() {
     const [copiedCode, setCopiedCode] = useState<string | null>(null);
