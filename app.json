@@ -21,7 +21,8 @@
         "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#F87D0A"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.victorlwb.cashinfinitec"
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -39,6 +40,12 @@
           ]
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "642cf3b6-9405-4d44-b6b0-7b7bc600ff37"
+      }
+    }
   }
 }
