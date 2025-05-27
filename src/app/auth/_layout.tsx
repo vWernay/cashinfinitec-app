@@ -1,4 +1,6 @@
-import { Slot } from "expo-router"
+import { useAuth } from "@/contexts/auth-context"
+import { Slot, useRouter } from "expo-router"
+import { useEffect } from "react"
 import {
   Keyboard,
   KeyboardAvoidingView,
@@ -9,21 +11,22 @@ import {
 } from "react-native"
 
 export default function AuthLayout() {
+  const router = useRouter()
+  const { user, isLoading } = useAuth()
+
+  useEffect(() => {
+    if (!isLoading && user !== null) {
+      router.replace("/")
+    }
+  }, [user, isLoading, router])
+
   return (
     <KeyboardAvoidingView
       className="flex-1 bg-zinc-800"
-      behavior={"padding"}
-      keyboardVerticalOffset={Platform.OS === "ios" ? 40 : 5}
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-        <ScrollView
-          contentContainerStyle={{ flexGrow: 1 }}
-          keyboardShouldPersistTaps="handled"
-        >
-          <View className="flex-1">
-            <Slot />
-          </View>
-        </ScrollView>
+        <Slot />
       </TouchableWithoutFeedback>
     </KeyboardAvoidingView>
   )

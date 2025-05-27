@@ -5,6 +5,7 @@ import {
   useFonts,
 } from "@expo-google-fonts/roboto"
 import { Slot, SplashScreen } from "expo-router"
+import { Text } from "react-native"
 import "./global.css"
 import React, { useEffect } from "react"
 import Toast from "react-native-toast-message"
@@ -25,7 +26,14 @@ export default function RootLayout() {
     }
   }, [loaded, error])
 
-  if (!loaded && !error) return null
+  if (error) {
+    console.error(error)
+    return <Text>Error loading fonts</Text>
+  }
+
+  if (!loaded) {
+    return null
+  }
 
   return (
     <AuthProvider>

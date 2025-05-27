@@ -60,7 +60,7 @@ export default function LoginScreen() {
         <Button title="ENTRAR" onPress={handleSubmit(onSubmit)} />
         <View className="flex-row gap-1">
           <Text className="text-white text-base">Não tem uma conta?</Text>
-          <TouchableOpacity onPress={() => router.navigate("/register")}>
+          <TouchableOpacity onPress={() => router.push("/auth/register")}>
             <Text className="text-green text-base font-semibold">
               Registrar-se.
             </Text>

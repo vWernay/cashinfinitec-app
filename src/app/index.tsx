@@ -15,7 +15,7 @@ export default function SplashScreen() {
     } else {
       router.replace("/home")
     }
-  }, [user, isLoading, router.replace])
+  }, [user, isLoading, router])
 
   return (
     <View className="flex-1 items-center justify-center bg-zinc-800">

@@ -11,7 +11,7 @@ export default function AppLayout() {
     if (!isLoading && user === null) {
       router.replace("/auth")
     }
-  }, [user, isLoading, router.replace])
+  }, [user, isLoading, router])
 
   if (isLoading || user === null) return null
 

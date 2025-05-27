@@ -1,5 +1,4 @@
 import AsyncStorage from "@react-native-async-storage/async-storage"
-import { useRouter } from "expo-router"
 import { createContext, useContext, useEffect, useState } from "react"
 import Toast from "react-native-toast-message"
 
@@ -18,7 +17,6 @@ type AuthContextType = {
 const AuthContext = createContext<AuthContextType | null>(null)
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-  const router = useRouter()
   const [user, setUser] = useState<User | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
@@ -37,7 +35,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const fakeUser = { email }
     await AsyncStorage.setItem("@user", JSON.stringify(fakeUser))
     setUser(fakeUser)
-    router.replace("/")
 
     Toast.show({
       type: "success",
@@ -50,7 +47,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const fakeUser = { email }
     await AsyncStorage.setItem("@user", JSON.stringify(fakeUser))
     setUser(fakeUser)
-    router.replace("/")
 
     Toast.show({
       type: "success",
@@ -62,7 +58,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const logout = async () => {
     await AsyncStorage.removeItem("@user")
     setUser(null)
-    router.replace("/auth")
 
     Toast.show({
       type: "success",

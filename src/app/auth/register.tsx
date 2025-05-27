@@ -13,7 +13,7 @@ import {
   registerSchema,
 } from "../../schemas/register-schema"
 
-export default function LoginScreen() {
+export default function RegisterScreen() {
   const router = useRouter()
   const { register } = useAuth()
 
@@ -83,7 +83,7 @@ export default function LoginScreen() {
         <Button title="CRIAR CONTA" onPress={handleSubmit(onSubmit)} />
         <View className="flex-row gap-1">
           <Text className="text-white text-base">Já tem uma conta?</Text>
-          <TouchableOpacity onPress={() => router.navigate("/login")}>
+          <TouchableOpacity onPress={() => router.push("/auth/login")}>
             <Text className="text-green text-base font-semibold">
               Fazer login.
             </Text>
