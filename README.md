@@ -22,10 +22,12 @@ CashInfinitec is a mobile app developed during a college project focused on busi
 
 ## 📱 Screenshots
 
-<img src="./.github/screenshots/com.victorlwb.cashinfinitec-portrait-auth.webp" width="256"/>
-<img src="./.github/screenshots/com.victorlwb.cashinfinitec-portrait-auth_login.webp" width="256"/>
-<img src="./.github/screenshots/com.victorlwb.cashinfinitec-portrait-home.webp" width="256"/>
-<img src="./.github/screenshots/com.victorlwb.cashinfinitec-portrait-offers.webp" width="256"/>
+<div style="display: flex;">
+  <img src="./.github/screenshots/com.victorlwb.cashinfinitec-portrait-auth.webp" width="256"/>
+  <img src="./.github/screenshots/com.victorlwb.cashinfinitec-portrait-auth_login.webp" width="256"/>
+  <img src="./.github/screenshots/com.victorlwb.cashinfinitec-portrait-home.webp" width="256"/>
+  <img src="./.github/screenshots/com.victorlwb.cashinfinitec-portrait-offers.webp" width="256"/>
+</div>
 
 ## 🗺️ Project Context
 
